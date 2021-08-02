@@ -1,0 +1,169 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+}
+body{
+  background: black;
+}
+.slider{
+  margin-top: 6%;
+    width: 70vw;
+    height: 80vh; 
+    overflow: hidden;
+    position:absolute;
+    left: 15%;
+    
+  }
+  /* @media screen and (max-width:768px)
+  {
+      .slider{
+        width: 400px;
+      }
+  } */
+.slides{
+  width: 70vw;
+  height: 78vh;
+  display: flex;
+}
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 80vw;
+  transition:2s;
+  z-index: -1;
+}
+
+.slide img{
+  width: 70vw;
+  height: 80vh;
+}
+/* css for manual slide navigation */
+
+.navigation-manual{
+  position: absolute;
+  width:100%;
+  margin-top: -8vh;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border : 2px solid white;
+  padding: 5px;
+  margin:40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition:1.5s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right:40px;
+}
+.manual-btn:hover{
+  background: whitesmoke;
+}
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -100%;
+}
+#radio3:checked ~ .first{
+  margin-left: -200%;
+}
+#radio4:checked ~ .first{
+  margin-left: -300%;
+}
+
+/* css for automatic navigation */
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  /* height: 78vh; */
+  width: 70vw;
+  justify-content: center;
+  margin-top: 70.02vh;
+}
+.navigation-auto div{
+  border:2px solid white;
+  padding: 5px;
+  border-radius: 20px;
+  margin: 40px;
+  transition: 1.5s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right:40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: white;
+}
+
+/* .navbar{
+  position: fixed;
+  width: 100vw;
+  height: 13vh;
+  padding: 0;
+    z-index:10;
+    margin:0;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-around;
+}
+.amg2{
+  display: flex;
+    align-items: center;
+    margin-right: -100px;
+    height: 13vh;
+    width:11vw;
+    margin-top:-5%;
+}
+@media screen and (max-width:668px) {
+  .amg2{display: none; }
+  .logo{
+      margin-left: 15vw;
+  }
+}
+.logo{
+  height: 11vh;
+  width: 11vw;
+  margin-left: -8vw;
+}
+@media screen and (max-width:668px){
+  .logo{
+    margin-left: 45vw;
+    transition: linear;
+  }
+}
+.btn_1{
+  margin:20px;
+  font-size: 1.2rem;
+  border: none;
+  color: #92968D;
+  background: none;
+  cursor: pointer;
+
+}
+.btn_1:focus{
+  color:#ffff;
+}
+
+Calling the containers scrolling */

@@ -1,0 +1,206 @@
+.cards:hover {
+  background-color: rgb(58, 58, 58);
+}
+.cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* background-color: blue; */
+  width: 100%;
+  height: auto;
+  top: 50%;
+}
+.cards {
+  background-color: black;
+  height: 450px;
+  width: 350px;
+  margin: 30px 40px 30px 40px;
+}
+
+.carimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info {
+  width: auto;
+  height: 30%;
+}
+.class {
+  width: auto;
+  height: 60px;
+  font-family: "Baskervville";
+  font-size: 1.5rem;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.class span {
+  position: relative;
+  top: 40%;
+}
+.price {
+  width: auto;
+  height: 40px;
+  font-size: 1.2rem;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  font-weight: 550;
+  color: #92968d;
+}
+.price span {
+  position: relative;
+  top: 10%;
+}
+.info img {
+  position: relative;
+  left: 125px;
+  width: 90px;
+  height: 80px;
+  bottom: 18px;
+}
+.title {
+  width: auto;
+  height: 10vh;
+  margin: 60px 80px auto 80px;
+  /* background-color: tomato; */
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  border-color: black black #92968d black;
+  border-style: solid;
+  border-width: thin;
+}
+.title span {
+  position: relative;
+  top: 20px;
+  font-size: 2rem;
+  color: #92968d;
+}
+.all {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 100%;
+}
+.navbar {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  padding: 0;
+  z-index: 10;
+  margin: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  transition: 0.4s ease-in-out;
+  transform: translateY(0.1%);
+  
+}
+/* .cards:hover .navbar{
+    transform: translateY(0);
+} */
+.amg2 {
+  display: flex;
+  /* align-items: center; */
+  margin-right: -15vw;
+  height: 10vh;
+  width: 10vw;
+  margin-top: -9%;
+  float:right;
+}
+@media screen and (max-width: 668px) {
+  .amg2 {
+    display: none;
+  }
+}
+.logo {
+  height: 10vh;
+  width: 10vw;
+  margin-left: -15vw;
+}
+@media screen and (max-width: 668px) {
+  .logo {
+    margin-left: 30vw;
+    transition: linear;
+  }
+}
+.buttons{
+    position: absolute;
+    top:15px;
+    display: flex;
+    
+}
+.buttons ul{
+    display: flex;
+    list-style: none;
+    justify-content:  space-around;
+}
+.btn_1 {
+  margin: 20px;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 668px) {
+    .btn_1 {
+      display: none;
+    }
+  }
+.buttons ul li a:focus{
+    color: #00adef;
+    border-bottom: #00adef;
+}
+.sandwhich:hover{
+  color: #00adef;
+}
+
+#ontop{
+  height: -10px;
+  width: auto;
+  z-index: -5;
+}
+.barss{
+  background-color: none;
+  top: -30vh;
+  width: 125px;
+  float: right;
+  /* z-index: 100; */
+  right: -7px;
+  position: absolute;
+  transition: 0.4s ease-in-out;
+  transform: translateY(0.1%);
+}
+@media screen and (min-width: 668px) {
+  .barss {
+    display: none;
+  }
+}
+.buttons1{
+    position: absolute;
+    top: 9.7%;
+}
+.btn_2{
+  margin: 20px;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background: none;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.barss ul{
+  text-decoration: none;
+  list-style: none;
+  justify-content:  space-around;
+}
+.buttons1 ul li a:focus{
+  color: #00adef;
+  border-bottom: #00adef;
+}

@@ -1,0 +1,30 @@
+.navamg{
+    display: flex;
+    align-items: center;
+    margin-right: -100px;
+    height: 200px;
+    width:200px
+}
+@media screen and (max-width:768px) {
+    .navamg{display: none; }
+}
+Nav{
+    position: sticky;
+    z-index: 10;
+}
+/* .manual-btn:not(:last-child){
+    margin-right:40px;
+  }
+  .manual-btn:hover{
+    background: whitesmoke;
+  } */
+  .name1:checked ~ .first{
+    margin-top: -100%;
+  }
+  .name:checked ~ .first{
+    margin-left: -100%;
+  }
+  .name:checked ~ .first{
+    margin-left: -200%;
+  }
+  
